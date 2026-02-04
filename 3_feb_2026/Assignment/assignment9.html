@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9: Multilingual & Text Direction</title>
+</head>
+<body>
+
+    <h1>Global Web Concepts</h1>
+
+    <section>
+        <h3>English (Left-to-Right)</h3>
+        <p>
+            This text is in English. It is read from left to right. 
+            The browser defaults to this direction because we set 
+            <code>lang="en"</code> in the HTML tag.
+        </p>
+    </section>
+
+    <section>
+        <h3>Arabic (Right-to-Left)</h3>
+        <p>
+            The following phrase is standard Arabic greeting text:
+        </p>
+        
+        <p>
+            <strong>Original:</strong> <bdo dir="rtl">مرحبا بكم في موقعنا</bdo>
+        </p>
+        
+        <p class="note">
+            (Translation: "Welcome to our website")
+        </p>
+    </section>
+
+    <section>
+        <h3>Why do we use BDO?</h3>
+        <p>
+            If we force English to behave like Arabic using 
+            <code>&lt;bdo dir="rtl"&gt;</code>, the letters effectively flip order:
+        </p>
+        <p>
+            <strong>Effect:</strong> <bdo dir="rtl">This text is flipped</bdo>
+        </p>
+    </section>
+
+</body>
+</html>
